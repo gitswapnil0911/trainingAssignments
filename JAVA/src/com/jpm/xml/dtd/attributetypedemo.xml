@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE countries SYSTEM "D:\Swapnil\JAVA\src\com\jpm\xml\dtd\attributes.dtd"><!---SYSTEM is used if DTD is avaialbale locally on system if its on servere then Public has to be used and provide url-->
+<countries>
+    <country code="I91" language="" continent="ASIA" pm="NAMO">
+        <name>India</name>
+        <capital>New Delhi</capital>
+        <currency>INR</currency>
+    </country>
+</countries>

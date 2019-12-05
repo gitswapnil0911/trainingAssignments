@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    val = prompt("Enter Number for Prime check:");
+    n=parseInt(val);
+    flag=0;
+   if (n===1)
+  {
+    document.write("<h2>Not a prime number:" + n + "</h2>");
+  }
+  else if(n === 2)
+  {
+    document.write("<h2>Is a prime number:" + n + "</h2>");
+  }else
+  {
+    for(var x = 2; x < n; x++)
+    {
+      if(n % x === 0)
+      {
+        document.write("<h2>Not a prime number:" + n + "</h2>");
+        flag=1;
+        break;
+      }
+    }
+    if (flag==0)
+    document.write("<h2>Is a prime number:" + n + "</h2>");;
+  }
+</script>
+</body>
+</html>

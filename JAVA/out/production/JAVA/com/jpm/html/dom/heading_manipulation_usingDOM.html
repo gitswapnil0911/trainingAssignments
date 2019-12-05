@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function showMessage(tMsg){
+        var x = document.getElementById("hd1");
+        var y = document.getElementById("hd2");
+        var z = document.getElementById("hd3");
+        x.innerHTML = tMsg.value;
+        y.innerHTML = tMsg.value;
+        z.innerHTML = tMsg.value;
+        }
+    </script>
+</head>
+<body>
+<form name="form1">
+    <pre>
+        Enter Message : <input type="text" name="msg"/>
+        <input type="button" value="Show" onclick="showMessage(msg)"/>
+    </pre>
+</form>
+<h1 id="hd1">Hello</h1>
+<h2 id="hd2">Hello</h2>
+<h3 id="hd3">Hello</h3>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var helloGreeting = {
+            message:"Hello",
+            name:"Rakesh",
+            say:function(){
+                return this.message + ", " + this.name;
+                }
+             }
+
+             document.write("<h3>Greeting Message: " + helloGreeting.message + "</h3>");
+             document.write("<h3>Greeting Name: " + helloGreeting.name + "</h3>");
+             document.write("<h3>Greeting Message: " + helloGreeting.say() + "</h3>");
+
+</script>
+</body>
+</html>

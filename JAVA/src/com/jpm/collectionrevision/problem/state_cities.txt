@@ -1,0 +1,4 @@
+MH=Mumbai:20000000
+MH=Pune:4000000
+PN=Amritsar:2000000
+PN=Ludhiyana:1500000

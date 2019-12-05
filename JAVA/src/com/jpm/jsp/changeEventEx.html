@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function changeColor(list){
+        document.bgColor=list.value;
+        }
+    </script>
+</head>
+<body>
+<h2>Change Event example</h2>
+<form name="colorForm">
+    <pre>
+        <h3>Choose Color</h3>
+        <select name="colorList" onchange="changeColor(this)">
+            <option>Select Color</option>
+            <option value="Red">Red</option>
+            <option value="Blue">Blue</option>
+            <option value="Green">Green</option>
+            <option value="Cyan">Cyan</option>
+        </select>
+    </pre>
+</form>
+</body>
+</html>

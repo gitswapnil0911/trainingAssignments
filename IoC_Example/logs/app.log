@@ -1,0 +1,4 @@
+2019-11-15 12:22:18,789 INFO c.t.a.LoggingAdvice [main] Logging using log4j
+2019-11-15 12:22:18,805 INFO c.t.a.LoggingAdvice [main] Logging using log4j
+2019-11-15 12:51:32,667 INFO c.t.a.LoggingAdvice [main] Logging using log4j
+2019-11-15 12:51:32,672 INFO c.t.a.LoggingAdvice [main] Logging using log4j

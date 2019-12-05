@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!ELEMENT countries (country)>
+        <!ELEMENT country (name, capital, currency, description)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT capital (#PCDATA)>
+        <!ELEMENT currency (#PCDATA)>
+        <!ELEMENT description (continent, language)>
+        <!ELEMENT continent (#PCDATA)>
+        <!ELEMENT language (#PCDATA)>

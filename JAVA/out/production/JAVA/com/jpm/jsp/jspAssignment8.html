@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript">
+        function calcOperation(f1){
+            alert("called");
+            shape = f1.mathc.value;
+            num = f1.num_txt.value;
+            vnum = parseInt(num);
+            result = 0;
+
+            if(shape=="square")
+            result = vnum*vnum;
+            else
+            result = vnum*vnum*vnum;
+            alert(result);
+            n1 = document.getElementById("result");
+            n1.value= result;
+        }
+
+    </script>
+</head>
+<body>
+<form name="form1">
+    <pre>
+        Enter a number : <input type="text" name="num_txt">
+        Result         : <input type="text" id="result" disabled>
+        Required Operation:
+        <select name="mathc" onchange="calcOperation(form1)">
+            <option value="shape"></option>
+            <option value="square">Square</option>
+            <option value="cube">Cube</option>
+            </select>
+    </pre>
+</form>
+</body>
+</html>

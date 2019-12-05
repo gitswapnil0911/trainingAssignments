@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        .yellow {
+            background-color: yellow;
+        }
+        .pink {
+            background-color: pink;
+        }
+        .orange {
+            background-color: orange;
+        }
+    </style>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        function hideYellowParagraph(){
+        $("p.yellow").hide();
+        }
+        function hideYellowHeading(){
+        $("h1.yellow").hide();
+        }
+        function hideYellowAll(){
+        $(".yellow").hide();
+        }
+        function showYellowAll(){
+        $(".yellow").show();
+        }
+    </script>
+</head>
+<body>
+<p class="yellow">This is Para1</p>
+<p class="yellow">This is Para2</p>
+<p class="pink">This is Para1</p>
+<h1 class="yellow">Heading1</h1>
+<h1 class="yellow">Heading1</h1>
+<h1 class="orange">Heading1</h1>
+<form>
+    <input type="button" value="Hide Yellow Para" onclick="hideYellowParagraph()">
+    <input type="button" value="Hide Yellow Heading" onclick="hideYellowHeading()">
+    <input type="button" value="Hide Yellow all" onclick="hideYellowAll()">
+    <input type="button" value="Show Yellow all" onclick="showYellowAll()">
+</form>
+</body>
+</html>

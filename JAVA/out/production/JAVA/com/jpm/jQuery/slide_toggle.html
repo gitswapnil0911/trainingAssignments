@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+        $("#slide_up_down").click(function (){
+        $("h1").slideToggle("slow", function (){
+        alert("Done");
+        });
+        });
+        });
+            </script>
+</head>
+<body>
+<h1>Welcome</h1>
+<input type="button" id="slide_up_down" value="Slide Up Down">
+
+
+</body>
+</html>

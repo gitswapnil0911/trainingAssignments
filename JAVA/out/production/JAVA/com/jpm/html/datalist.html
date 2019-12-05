@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function showFruit(dList){
+        alert(dList.value);
+        }
+    </script>
+</head>
+<body>
+<form name="form1">
+    <input list="fruits" name="fruit"/>
+        <datalist id="fruits">
+            <option value="Mango">
+            <option value="Apple">
+            <option value="Banana">
+            <option value="Orange">
+            <option value="Chikoo">
+            <option value="Muskmelon">
+        </datalist>
+    <input type="button" value="Submit" onclick="showFruit(fruit)">
+</form>
+<h3 id="email"></h3>
+<h3 id="url"></h3>
+<h3 id="age"></h3>
+<h3 id="date"></h3>
+<h3 id="rng"></h3>
+</body>
+</html>

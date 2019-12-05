@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function showFullName(myForm){
+        fn=myForm.fname.value;
+        ln=myForm.lname.value;
+        fullName=fn + " " + ln;
+        document.form1.fullname.value=fullName;
+        }
+    </script>
+</head>
+<body>
+    <h2>Click Event Example</h2>
+    <form name="form1">
+        <pre>
+            First Name : <input type="text" name="fname"/>
+
+            Last Name : <input type="text" name="lname"/>
+
+            Full Name : <input type="text" name="fullname" disabled/>
+
+            <input type="button" value="Show Full Name" onclick="showFullName(form1)"/>
+
+        </pre>
+    </form>
+</body>
+</html>

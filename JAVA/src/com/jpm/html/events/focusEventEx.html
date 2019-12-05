@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function toYellow(txt){
+        txt.style.backgroundColor= "yellow";
+        }
+        function toPink(txt){
+        txt.style.backgroundColor= "pink";
+        }
+        function setFocus(){
+        document.form1.t1.value = " Enter Some Text";
+        document.form1.t1.focus();
+        }
+    </script>
+</head>
+<body bgcolor="Blue" onload="setFocus()">
+<h2>Focus Event example</h2>
+<form name="form1">
+    <pre>
+        <input type="text" name="t1" onblur="toYellow(this)" onfocus="toPink(this)" style="background-color: yellow"/>
+        <input type="text" name="t2" onblur="toYellow(this)" onfocus="toPink(this)" style="background-color: yellow"/>
+        <input type="text" name="t3" onblur="toYellow(this)" onfocus="toPink(this)" style="background-color: yellow"/>
+        <input type="text" name="t4" onblur="toYellow(this)" onfocus="toPink(this)" style="background-color: yellow"/>
+    </pre>
+</form>
+
+</body>
+</html>

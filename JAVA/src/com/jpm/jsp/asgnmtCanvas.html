@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function drawRectangle(f1){
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+        gtx=f1.x.value;
+        gty=f1.y.value;
+        gtheight=f1.height.value;
+        gtwidth=f1.width.value;
+        gtcolor=f1.ccolor.value;
+        ctx.fillStyle = gtcolor;
+        ctx.fillRect(gtx,gty,gtheight,gtwidth);
+        }
+    </script>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="800" style="border:1px solid #ff0000;">
+    Your Browser doesn't support Canvas element
+</canvas>
+<form name="form1">
+    <pre>
+        Enter X Coordinate : <input type="number" name="x" max="100" min="1"/>
+
+        Enter Y Coordinate : <input type="number" name="y" max="100" min="1">
+
+        Enter Width        : <input type="number" name="width" max="100" min="1"/>
+
+        Enter Height       : <input type="number" name="height" max="100" min="1"/>
+
+        Choose Color       : <input type="color" name="ccolor" value="#ff0000"/>
+
+        <input type="button" value="Submit" onclick="drawRectangle(form1)">
+        </pre>
+</form>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        function hideHeading1WithForeAndBack(){
+        $("h1[style='color:blue;background-color:black']").hide();
+
+        }
+        function hideHeading1WithAlignmentForeAndBack(){
+        $("h1[style='color:red;background-color:yellow'],[align='right']").hide();
+        }
+        function hideHeading2WithBack(){
+        $("h2[style='background-color:orange;']").hide();
+        }
+        function showAll(){
+        $("h1,h2").show();
+        }
+    </script>
+</head>
+<body>
+<h1 align="center" style="color:blue;background-color:black">This is centerly aligned heading1</h1>
+<h1 align="left" style="color:blue;background-color:black">This is left aligned heading1</h1>
+<h1 align="right"  style="color:red;background-color:yellow">This is right aligned heading1</h1>
+<h1 align="right"  style="color:red;background-color:yellow">This is right aligned heading1</h1>
+<h1 align="right">This is left aligned heading1</h1>
+<h2 align="center" style="background-color:orange;">This is center aligned heading</h2>
+<h2 align="center" style="background-color:orange;">This is center aligned heading</h2>
+<h2 align="center" style="background-color:cyan;">This is center aligned heading</h2>
+<form>
+    <pre>
+        <input type="button" value="Hide H1 with Fore and Back" onclick="hideHeading1WithForeAndBack()">
+        <input type="button" value="Hide H1 with Alignment Fore and Back" onclick="hideHeading1WithAlignmentForeAndBack()">
+        <input type="button" value="Hide H2 with Back" onclick="hideHeading2WithBack()">
+        <input type="button" value="Show All" onclick="showAll()">
+    </pre>
+</form>
+</body>
+</html>

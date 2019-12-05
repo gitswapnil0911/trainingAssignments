@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var months = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+    var weekdays = new Array("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday");
+    var sysDate= new Date();
+    document.write("<p>"+sysDate+"</p>");
+    document.write("<p>"+sysDate.getDate()+"</p>");
+    document.write("<p>"+sysDate.getTime()/(1000*60*60*24*365)+"</p>");
+    document.write("<p>"+months[sysDate.getMonth()]+"</p>");
+    document.write("<p>"+sysDate.getFullYear()+"</p>");
+
+	var date1 = new Date(2018,7,8,11,25,34);
+    var date2 = new Date("August 08, 2018 11:24:00");
+    document.write("<p>"+date1+"</p>");
+    document.write("<p>"+date2+"</p>");
+    document.write("<p>"+weekdays[date2.getDay()]+"</p>");
+</script>
+</body>
+</html>

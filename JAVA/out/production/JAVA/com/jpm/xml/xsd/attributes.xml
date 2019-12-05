@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lib:books xmlns:lib="http://www.library.com"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://www.library.com attributes.xsd">
+  <!--2 to 5 repetitions:-->
+  <lib:book language="English" type="IT">
+    <lib:title>Alchemist</lib:title>
+    <lib:author>Dan</lib:author>
+    <lib:price>400.50</lib:price>
+  </lib:book>
+  <lib:book language="Marathi" type="IT">
+    <lib:title>Mrutyunjay</lib:title>
+    <lib:author>Patil</lib:author>
+    <lib:price>700.67</lib:price>
+  </lib:book>
+</lib:books>

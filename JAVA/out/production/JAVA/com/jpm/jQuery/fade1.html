@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+        $("#fade_in").click(function (){
+        $("h1").fadeIn("slow",0.5);
+        });
+        $("#fade_out").click(function (){
+        $("h2").fadeOut("slow",0.5);
+        });
+        });
+
+    </script>
+</head>
+<body>
+<h1>Hi</h1>
+<h2>Welcome</h2>
+<input type="button" value="Fade In" id="fade_in">
+<input type="button" value="Fade out" id="fade_out">
+</body>
+</html>

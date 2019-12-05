@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        var count=0;
+        function insRow(frm){
+        var tableObj = document.getElementById('myTable');
+        count++;
+        var rowObj = tableObj.insertRow();
+        var cellObj0=rowObj.insertCell(0);
+        var cellObj1=rowObj.insertCell(1);
+        cellObj0.innerHTML=""+count;
+        cellObj1.innerHTML=frm.name.value;
+        frm.name.value="";
+        frm.name.focus();
+        }
+    </script>
+</head>
+<body>
+<table id="myTable" border="1">
+    <tr>
+        <th>Sr. No.</th>
+        <th>Name</th>
+    </tr>
+</table>
+<br/>
+<form name="form1">
+    <pre>
+        Enter name : <input type="text" name="name">
+        <input type="button" value="Insert" name="insert" onclick="insRow(form1)">
+    </pre>
+</form>
+</body>
+</html>

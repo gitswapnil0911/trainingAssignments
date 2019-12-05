@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var accountsData = {
+                accounts:[{accountNo:1,accountName:"Sam",accountBalance:100000,isCurrent:true},{accountNo:2,accountName:"Pat",accountBalance:10000,isCurrent:true},{accountNo:3,accountName:"Sandy",accountBalance:5000,isCurrent:false}],
+                }
+                accountsData.totalBalance = function(){
+                var accounts= accountsData.accounts;
+                totalBalance=0;
+                for(a in accounts){
+                totalBalance +=accounts[a].accountBalance;
+
+                }
+                return totalBalance;
+               }
+               accountsData.averageBalanceCurrent = function(){
+                var accounts= accountsData.accounts;
+                avgBalance=0;
+
+                avgBalance=totalBalance/(accounts.length);
+
+                return avgBalance;
+               }
+               document.write("<p>Total Balance is :  "+accountsData.totalBalance()+"</p>");
+               document.write("<p>Average Balance is :  "+accountsData.averageBalanceCurrent()+"</p>");
+
+</script>
+</body>
+</html>

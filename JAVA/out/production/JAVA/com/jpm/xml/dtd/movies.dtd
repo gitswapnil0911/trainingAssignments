@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!ELEMENT movies (movie)+>
+        <!ELEMENT movie (name, release-date, details)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT release-date (dd, mm, yy)>
+        <!ELEMENT dd (#PCDATA)>
+        <!ELEMENT mm (#PCDATA)>
+        <!ELEMENT yy (#PCDATA)>
+        <!ELEMENT details (director, producer, actors, collection)>
+        <!ELEMENT director (#PCDATA)>
+        <!ELEMENT producer (#PCDATA)>
+        <!ELEMENT actors (actor+)>
+        <!ELEMENT actor (#PCDATA)>
+        <!ELEMENT collection (#PCDATA)>
+        <!ATTLIST movie language (HINDI | ENGLISH) #REQUIRED>
+        <!ATTLIST movie genre (COMEDY | ACTION | THRILLER | SUSPENSE) #REQUIRED>
+

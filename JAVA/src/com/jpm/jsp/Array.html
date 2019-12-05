@@ -1,0 +1,24 @@
+<html>
+<script>
+    var nums= [12,56,23];
+    for(a in nums)
+        document.write(nums[a]+"</br>");
+     var cars= new Array();
+     cars[0]="Santro";
+     cars[1]="Zen";
+     cars[2]="Alto";
+     for(i=0;i<cars.length;i++)
+        document.write(cars[i]+"</br>");
+     for(a in cars)
+        document.write(cars[a]+"</br>");
+      var bikes= new Array();
+      bikes[0]="Splendour";
+      bikes[1]="Yamaha";
+      bikes[2]="Pulsar";
+      document.write(cars.concat(bikes));
+      document.write("<br>"+cars.join());
+      document.write("<br>"+cars.join("-"));
+      document.write("<br>"+cars.sort());
+      document.write("<br>"+bikes.reverse());
+</script>
+</html>

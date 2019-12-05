@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Mouse Event Example</h2>
+<script>
+    function printCoords(e){
+    x=e.screenX;
+    y=e.screenY;
+    document.form1.tx.value=x;
+    document.form1.ty.value=y;
+    }
+    function makeYellow(ta){
+    ta.style.backgroundColor = "yellow";
+    }
+    function makeRed(ta){
+    ta.style.backgroundColor = "red";
+    }
+</script>
+<form name="form1">
+    <pre>
+        <textarea rows="25" cols="100" onmousemove="printCoords(event)" onmouseenter="makeYellow(this)" onmouseout="makeRed(this)"></textarea>
+        X : <input type="text" name="tx" disabled>
+        Y : <input type="text" name="ty" disabled>
+    </pre>
+
+</form>
+</body>
+
+</html>

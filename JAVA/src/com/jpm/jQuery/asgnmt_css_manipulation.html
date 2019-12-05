@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function (){
+    $("#cbc").click(function (){
+    x=$("#bpick").val();
+    $("h1").css("background-color",x);
+    $("h2").css("background-color",x);
+    $("h3").css("background-color",x);
+    });
+    $("#cfc").click(function (){
+    y=$("#fpick").val();
+    $("h1").css("color",y);
+    $("h2").css("color",y);
+    $("h3").css("color",y);
+    });
+    });
+    </script>
+</head>
+<body>
+<h1 id="h1">Heading1</h1>
+<h1 id="h2">Heading1</h1>
+<h1 id="h3">Heading1</h1>
+<form>
+    Choose Foreground Color       : <input type="color" id="fpick" name="ccolor" value="#ff0000"/>
+    Choose Background Color       : <input type="color" id="bpick" name="ccolor" value="#ff0000"/>
+
+    <input type="button" id="cfc" value="Change F Color">
+    <input type="button" id="cbc" value="Change B Color">
+
+</form>
+
+</body>
+</html>

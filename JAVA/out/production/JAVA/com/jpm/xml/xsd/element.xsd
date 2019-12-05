@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+    targetNamespace="http://www.restaurant.com"
+    elementFormDefault="qualified">
+    <element name="restaurant">
+            <complexType>
+                <sequence>
+                    <element name="restaurant-name" type="string"/>
+                    <element name="restaurant-cuisine" type="string"/>
+                    <element name="no_of_branches" type="integer"/>
+                </sequence>
+            </complexType>
+    </element>
+</schema>

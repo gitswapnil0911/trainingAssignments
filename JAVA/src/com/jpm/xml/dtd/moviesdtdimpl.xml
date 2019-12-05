@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE movies SYSTEM "D:\Swapnil\JAVA\src\com\jpm\xml\dtd\movies.dtd"><!---SYSTEM is used if DTD is avaialbale locally on system if its on servere then Public has to be used and provide url-->
+<movies>
+    <movie language="ENGLISH" genre="ACTION">
+        <name>War</name>
+        <release-date>
+            <dd>02</dd>
+            <mm>10</mm>
+            <yy>2019</yy>
+        </release-date>
+        <details>
+            <director>Sidhharth</director>
+            <producer>Karan</producer>
+            <actors>
+                <actor>Hrithik</actor>
+                <actor>Tiger</actor>
+            </actors>
+            <collection>200CR</collection>
+        </details>
+        </movie>
+</movies>

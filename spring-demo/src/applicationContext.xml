@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans
+        xmlns="http://www.springframework.org/schema/beans"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p" xmlns:util="http://www.springframework.org/schema/util"
+        xsi:schemaLocation="http://www.springframework.org/schema/beans
+                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!--<bean id="e" class="com.training.Employee">
+        <constructor-arg value="10" type="int"></constructor-arg>
+        <constructor-arg value="Swapnil"></constructor-arg>
+        <constructor-arg>
+            <ref bean = "m"></ref>
+        </constructor-arg>
+        <constructor-arg>
+            <ref bean = "t"></ref>
+        </constructor-arg>
+    </bean>-->
+
+    <bean id="esi" class="com.training.Employee">
+        <property name ="id" value="10"></property>
+        <property name ="name" value="Swapnil"></property>
+        <property name ="manager">
+            <ref bean="m1"></ref>
+        </property>
+        <property name ="teamLead">
+            <ref bean="t1"></ref>
+        </property>
+    </bean>
+
+<!--
+<bean id="m" class="com.training.Manager">
+        <constructor-arg value="101"></constructor-arg>
+        <constructor-arg value="Manager Class"></constructor-arg>
+        <constructor-arg value="Dept Sales"></constructor-arg>
+    </bean>
+-->
+    <bean id="m1" class="com.training.Manager">
+        <property name="id" value="101"></property>
+        <property name="name" value="Manager Class"></property>
+        <property name="dept" value="Dept Sales"></property>
+    </bean>
+
+
+    <!--<bean id="t" class="com.training.TeamLead">
+        <constructor-arg value="102"></constructor-arg>
+        <constructor-arg value="Team Lead Class"></constructor-arg>
+        <constructor-arg value="Dept Accounts"></constructor-arg>
+        <constructor-arg value="Flight System"></constructor-arg>
+    </bean>-->
+
+    <bean id="t1" class="com.training.TeamLead">
+        <property name="id" value="102"></property>
+        <property name="name" value="Team Lead Class"></property>
+        <property name="dept" value="Dept Accounts"></property>
+        <property name = "project" value="Flight System"></property>
+    </bean>
+
+    <!--<bean id="e1" class="com.collection.Employeeclass">
+        <constructor-arg value="10"></constructor-arg>
+        <constructor-arg value="Swapnil"></constructor-arg>
+        <constructor-arg>
+            <list>
+                <ref bean="jr"></ref>
+                <ref bean="jr1"></ref>
+                <ref bean="jr2"></ref>
+            </list>
+            </constructor-arg>
+    </bean>
+        <bean id="ec1" class="com.collection.Employeeclass">
+        <constructor-arg value="10"></constructor-arg>
+        <constructor-arg value="Swapnil"></constructor-arg>
+        <constructor-arg>
+            <map>
+                <entry key="tcs" value-ref="list1"></entry>
+                <entry key="infy" value-ref="list2"></entry>
+                <entry key="jpmc" value-ref="list3"></entry>
+                <entry key="citi" value-ref="list4"></entry>
+            </map>
+        </constructor-arg>
+    </bean>
+    <bean id="jr" class="com.collection.JobRole">
+        <constructor-arg value="101"></constructor-arg>
+        <constructor-arg value="Soft Eng"></constructor-arg>
+        <constructor-arg value="First"></constructor-arg>
+    </bean>
+    <bean id="jr1" class="com.collection.JobRole">
+        <constructor-arg value="102"></constructor-arg>
+        <constructor-arg value="Sales Exec"></constructor-arg>
+        <constructor-arg value="Second"></constructor-arg>
+    </bean>
+    <bean id="jr2" class="com.collection.JobRole">
+        <constructor-arg value="103"></constructor-arg>
+        <constructor-arg value="Supp Eng"></constructor-arg>
+        <constructor-arg value="Third"></constructor-arg>
+    </bean>
+-->
+    <!--<util:list id ="list1">
+        <ref bean="jr"></ref>
+    </util:list>
+    <util:list id ="list2">
+        <ref bean="jr2"></ref>
+    </util:list>
+    <util:list id ="list4">
+        <ref bean="jr1"></ref>
+    </util:list>
+    <util:list id ="list3">
+        <ref bean="jr"></ref>
+    </util:list>-->
+    <bean id="ecsi1" class="com.collection.Employeeclass">
+        <property name="id" value="10"></property>
+        <property name="name" value="Swapnil"></property>
+        <property name="mMap">
+            <map>
+                <entry key="tcs" value-ref="list1"></entry>
+                <entry key="infy" value-ref="list2"></entry>
+                <entry key="jpmc" value-ref="list3"></entry>
+                <entry key="citi" value-ref="list4"></entry>
+            </map>
+        </property>
+    </bean>
+    <bean id="jr" class="com.collection.JobRole">
+        <property name="jobId" value="101"></property>
+        <property name="jobName" value="Soft Eng"></property>
+        <property name="payScale" value="First"></property>
+    </bean>
+    <bean id="jr1" class="com.collection.JobRole">
+        <property name="jobId" value="102"></property>
+        <property name="jobName" value="Sales Exec"></property>
+        <property name="payScale" value="Second"></property>
+    </bean>
+    <bean id="jr2" class="com.collection.JobRole">
+        <property name="jobId" value="103"></property>
+        <property name="jobName" value="Supp Eng"></property>
+        <property name="payScale" value="Third"></property>
+    </bean>
+
+    <util:list id ="list1">
+        <ref bean="jr"></ref>
+    </util:list>
+    <util:list id ="list2">
+        <ref bean="jr2"></ref>
+    </util:list>
+    <util:list id ="list4">
+        <ref bean="jr1"></ref>
+    </util:list>
+    <util:list id ="list3">
+        <ref bean="jr"></ref>
+    </util:list>
+</beans>

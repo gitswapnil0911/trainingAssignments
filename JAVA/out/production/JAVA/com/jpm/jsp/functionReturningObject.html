@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    descr = "Pen";
+    price=11;
+
+    pr= getProduct(descr, price);
+    showProduct(pr);
+    document.write("<h2>Name: "+ pr.pr_d.toUpperCase() + "</h2>");
+    document.write("<h2>Cost of 2: "+ pr.pr_p * 2 + "</h2>");
+
+    function showProduct(myProd){
+    alert(myProd.pr_d);
+    alert(myProd.pr_p);
+    }
+
+    function getProduct(d, p){
+    prod = {
+        pr_d : d,
+        pr_p : p
+    }
+    return prod;
+    }
+</script>
+</body>
+</html>

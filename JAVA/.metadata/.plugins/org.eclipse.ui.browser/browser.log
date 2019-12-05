@@ -1,0 +1,5 @@
+
+Oct 24, 2019 12:41:44.09 NEW SESSION
+Oct 24, 2019 12:41:44.09 [13352:13864:1024/124144.039:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+Oct 24, 2019 16:48:06.81 [13352:13864:1024/164806.814:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106
+Oct 24, 2019 16:48:43.45 [13352:13864:1024/164843.450:ERROR:connection_factory_impl.cc(418)] Failed to connect to MCS endpoint with error -106

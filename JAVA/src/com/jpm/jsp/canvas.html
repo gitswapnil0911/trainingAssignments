@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas" width="800" height="800" style="border:1px solid #ff0000;">
+    Your Browser doesn't support Canvas element
+</canvas>
+<script>
+    var canvas = document.getElementById("myCanvas");
+    var ctx = canvas.getContext("2d");
+    //Drawing Rectangle
+    ctx.fillStyle = "#FF0000";
+    ctx.fillRect(10,10,150,75);
+    //Drawing Line
+    ctx.moveTo(0,0);
+    ctx.lineTo(200,100);
+    ctx.stroke();
+    //Drawing Circle
+    ctx.beginPath();
+    ctx.arc(95,50,40,0,2*Math.PI);
+    ctx.fillStyle = "#0000ff";
+    ctx.fill();
+    //Drawing Text
+    ctx.font = "30px Arial";
+    ctx.fillStyle = "#0000ff";
+    ctx.fillText("Hello World",200,50);
+    //Drwaing a stroke text
+    ctx.font = "30px Arial";
+    ctx.fillStyle = "#0000ff";
+    ctx.strokeText("Welcome",200,200);
+</script>
+</body>
+</html>

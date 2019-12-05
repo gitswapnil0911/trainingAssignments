@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+
+        function showMessage(f1){
+        alert("hi");
+        name = f1.fname.value;
+        age = f1.age.value;
+        gender = f1.gender.value;
+        language = f1.language.value;
+        height = f1.height.value;
+        weight = f1.weight.value;
+        bmi = calcBmi(height,weight);
+        cgender=checkGender(gender);
+        scitizen= checkCitizen(age);
+        oweight= checkWeight(weight);
+
+        n1 = document.getElementById("name");
+        b1 = document.getElementById("bmi");
+        s1 = document.getElementById("scit");
+        o1 = document.getElementById("owt");
+        l1 = document.getElementById("lang");
+    n1.innerHTML= "Hello "+cgender+" " +name;
+    b1.innerHTML="Your BMI is "+bmi;
+    s1.innerHTML="You "+scitizen+" senior citizen";
+    o1.innerHTML="You "+oweight+" overweight";;
+    l1.innerHTML="You prefered language is "+language;
+    }
+        function calcBmi(height,weight){
+            var bmi = weight/height;
+            return bmi;
+        }
+        function checkGender(gender){
+        if(gender == "Male")
+        return "Mr.";
+        else
+        return "Ms.";
+        }
+        function checkCitizen(age){
+         if(age > 60)
+        return "are";
+        else
+        return "are not";
+        }
+        function checkWeight(weight){
+        if(weight > 80)
+        return "are";
+        else
+        return "are not";
+        }
+    </script>
+</head>
+<body>
+<form name="form1">
+    <pre>
+        Enter Name :    <input type="text" name="fname"/>
+
+        Enter Age :     <input type="number" name="age" max="100" min="1"/>
+
+        Select Gender : <input type="radio" name="gender" value="Male" checked="true">M</input>
+                        <input type="radio" name="gender" value="Female" checked="false">F</input>
+
+        Select Language:<input list="languages" name="language"/>
+                            <datalist id="languages">
+                                <option value="English">
+                                <option value="Marathi">
+                                <option value="Hindi">
+                                <option value="Malyalam">
+                                <option value="Hibru">
+                                <option value="Gujrati">
+                            </datalist>
+
+        Enter Height :  <input type="number" name="height" max="100" min="1">
+
+        Enter Weight :  <input type="number" name="weight" max="100" min="1">
+
+        <input type="button" value="Submit" onclick="showMessage(form1)">
+        </pre>
+</form>
+<h1 id="name"></h1>
+<h3 id="scit"></h3>
+<h3 id="bmi"></h3>
+<h3 id="owt"></h3>
+<h3 id="lang"></h3>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Assignment</title>
+    <script>
+
+        function beforeLogin(frm){
+        var beforeLog = {
+        username : frm.uname.value,
+        password : frm.pwd.value
+        }
+        afterLogin(beforeLog);
+        }
+
+        function afterLogin(beforeLog){
+        var vusername="Sam";
+        var vpwd="login";
+        var afterLog = {
+        username : "",
+        validationStatus : false
+        }
+
+        if((beforeLog.username == vusername) && (beforeLog.password == vpwd)){
+        validationStatus=true;
+        header = document.getElementById("hd1");
+        header.innerHTML=vusername+" "+"is a Valid User";
+        }
+        else{
+        validationStatus=false;
+        header = document.getElementById("hd1");
+        header.innerHTML=vusername+" "+"is a Invalid User";
+        }
+        }
+    </script>
+</head>
+<body>
+<h1 align="center">Login Assignment</h1>
+<form name="form1">
+    <pre>
+        <h2 id="hd1"></h2>
+
+        Enter User Name : <input type="text" name="uname" align="center">
+
+        Enter Password  : <input type="text" name="pwd" align="center">
+
+        <input type="button" name="submit" value="Submit" onclick="beforeLogin(form1)" align="center">
+    </pre>
+</form>
+</body>
+</html>

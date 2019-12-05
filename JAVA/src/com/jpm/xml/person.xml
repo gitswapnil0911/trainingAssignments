@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE person-details [
+        <!ELEMENT person-details (person)>
+        <!ELEMENT person (full-name, age, city)>
+        <!ELEMENT full-name (first-name, last-name)>
+        <!ELEMENT first-name (#PCDATA)>
+        <!ELEMENT last-name (#PCDATA)>
+        <!ELEMENT age (#PCDATA)>
+        <!ELEMENT city (#PCDATA)>
+        ]>
+<person-details>
+    <person>
+        <full-name>
+            <first-name>Pat</first-name>
+            <last-name>Palav</last-name>
+        </full-name>
+        <age>30</age>
+        <city>Mumbai</city>
+    </person>
+</person-details>

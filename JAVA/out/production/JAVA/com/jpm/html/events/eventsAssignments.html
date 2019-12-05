@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    function addNumbers(myForm){
+    fn=myForm.number1.value;
+    num1= parseInt(fn);
+    sn=myForm.number2.value;
+    num2= parseInt(sn);
+    sum=num1+num2;
+    document.form1.result.value=sum;
+    }
+
+    function subNumbers(myForm){
+    fn=myForm.number1.value;
+    num1= parseInt(fn);
+    sn=myForm.number2.value;
+    num2= parseInt(sn);
+    if(num1 < num2)
+    alert("Enter Number 2 smaller than Number1")
+    else
+    sum=num1-num2;
+    document.form1.result.value=sum;
+    }
+    </script>
+</head>
+<body>
+<h2>Event Assignment</h2>
+<form name="form1">
+        <pre>
+            Number 1 : <input type="text" name="number1"/>
+
+            Number 2 : <input type="text" name="number2"/>
+
+            Result : <input type="text" name="result" disabled/>
+
+            <input type="button" value="ADD" onclick="addNumbers(form1)"/>
+            <input type="button" value="SUBSTRACT" onclick="subNumbers(form1)"/>
+
+        </pre>
+</form>
+
+</body>
+</html>

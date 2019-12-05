@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function (){
+        $("#animate").click(function (){
+        var div = $("div");
+        div.animate({height:'300px',opacity:'0.2'},2000);
+        div.animate({height:'300px',opacity:'0.5'},3000);
+        div.animate({height:'100px',opacity:'0.4'},3000);
+        div.animate({height:'100px',opacity:'0.8'},4000);
+        });
+        });
+</script>
+</head>
+<body>
+<form>
+    <input type="button" id="animate" value="Start Animation">
+</form>
+<div style="background:red;height:100px;width:100px;position:absolute;">
+</body>
+</html>

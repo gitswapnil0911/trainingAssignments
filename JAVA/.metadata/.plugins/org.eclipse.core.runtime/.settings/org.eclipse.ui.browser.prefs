@@ -1,0 +1,4 @@
+browser-choice=1
+browsers=<?xml version\="1.0" encoding\="UTF-8"?>\r\n<web-browsers current\="2">\r\n<system/>\r\n<external location\="C\:\\Program Files\\Internet Explorer\\iexplore.exe" name\="Internet Explorer"/>\r\n<external location\="C\:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe" name\="Chrome"/>\r\n</web-browsers>
+eclipse.preferences.version=1
+internalWebBrowserHistory=http\://localhost\:8888/WebApp2/adder.html|*|http\://localhost\:8888/WebApp2/adder|*|http\://localhost\:8888/WebApp2/adder?n1\=10&n2\=20|*|http\://localhost\:8888/WebApp2/adder?n1\=123&n2\=17|*|http\://localhost\:8888/WebApp2/getReviews|*|http\://localhost\:8888/WebApp2/postReviews|*|http\://localhost\:8888/WebApp1/GreetingServlet|*|http\://localhost\:8888/WebApp1/hello|*|

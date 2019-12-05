@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function (){
+        $("#hide").click(function (){
+        //$("p").hide(2000);
+        $("p").hide("slow");
+        });
+        $("#show").click(function (){
+        //$("p").show(4000);
+        $("p").show("medium");
+        });
+        });
+
+    </script>
+</head>
+<body>
+<p>If you click "Hide" i will disappear, and appear when clicked on "Show"</p>
+<input type="button" id="hide" value="Hide">
+<input type="button" id="show" value="Show">
+</body>
+</html>

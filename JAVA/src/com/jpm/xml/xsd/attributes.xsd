@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.library.com"
+        elementFormDefault="qualified">
+    <element name="books">
+        <complexType>
+            <sequence>
+            <element name="book" minOccurs="2" maxOccurs="5">
+                <complexType>
+                    <sequence>
+                        <element name="title" type="string"/>
+                        <element name="author" type="string"/>
+                        <element name="price" type="float"/>
+                    </sequence>
+                    <attribute name="language" use="required"/>
+                    <attribute name="type" use="optional" default="IT"/>
+                </complexType>
+            </element>
+            </sequence>
+        </complexType>
+    </element>
+</schema>

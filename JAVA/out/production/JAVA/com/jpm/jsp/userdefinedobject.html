@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script type="text/javascript">
+    var emp = {
+    empNo:1001,
+    name:"Sachin Dev",
+    salary:5000.75,
+    isPermanent:true,
+    certifications:["OCJP","OCWCD","OCBCD","OCEA"],
+    certificationsS:[{title:"OCJP",costINR:6500},{title:"OCWCD",costINR:7000}],
+    address:{
+            city:"Mumbai",
+            location:"Borivali",
+            state:"Maharashtra",
+            pincode:400066
+    }
+
+    }
+    var certs= emp.certifications;
+    for(c in certs){
+    document.write("<h4>" + certs[c] + "</h4>");
+    }
+
+    var certificationsS=emp.certificationsS;
+    for(d in certificationsS){
+    certification= certificationsS[d];
+    document.write("<h5>Title: " + certfication.title + " , Cost in INR : " + certification.costINR + "</h5>");
+    }
+
+    document.write("<h3>Name: " + emp.name + "</h3>");
+    annual_sal = emp.salary * 12;
+    document.write("<h3>Annual Salary: " + emp.name + " is " + annual_sal);
+    if(emp.isPermanent)
+        document.write("<h3>" + emp.name + " is on Permanent Payroll");
+    else
+        document.write("<h3>" + emp.name + " is Contractor");
+    alert(emp.address.location);
+</script>
+</body>
+</html>

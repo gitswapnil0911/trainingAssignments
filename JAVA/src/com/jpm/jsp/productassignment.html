@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var productDetails = {};
+    var val = prompt("Enter Product Description, Rate and quantity");
+    var segg= val.split(",");
+    productDetails.productDescription=segg[0];
+    productDetails.productRate=segg[1];
+    productDetails.productQuantity=segg[2];
+    productDetails.sale = function() {
+    if(this.productQuantity > 50){
+    return (this.productQuantity * this.productRate)-((this.productQuantity * this.productRate)*0.20);
+    }
+    else if(this.productQuantity >= 25){
+    return (this.productQuantity * this.productRate)-((this.productQuantity * this.productRate)*0.10);
+    }
+    else
+    return this.productQuantity * this.productRate;
+    }
+
+    document.write("<h3>Product Description: " + productDetails.productDescription + "</h3>");
+    document.write("<h3>Product Rate: " + productDetails.productRate + "</h3>");
+    document.write("<h3>Product Quantity: " + productDetails.productQuantity + "</h3>");
+    document.write("<h3>Sale is : " + productDetails.sale() + "</h3>");
+</script>
+</body>
+</html>

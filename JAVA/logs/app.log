@@ -1,0 +1,7 @@
+2019-10-01 16:24:34,121 FATAL c.j.l.log4jDemo [main] FATAL
+2019-10-01 16:24:34,124 ERROR c.j.l.log4jDemo [main] EROOR
+2019-10-01 16:52:46,049 FATAL c.j.l.log4jDemo [main] FATAL
+2019-10-01 16:52:46,055 ERROR c.j.l.log4jDemo [main] EROOR
+2019-10-01 16:54:54,796 FATAL c.j.l.log4jDemo [main] FATAL
+2019-10-01 16:54:54,800 ERROR c.j.l.log4jDemo [main] EROOR
+2019-10-03 13:17:00,292 ERROR c.j.l.log4jDemo [main] Record deletion Failed.

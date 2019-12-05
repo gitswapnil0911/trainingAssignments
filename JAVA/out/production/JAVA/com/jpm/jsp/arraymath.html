@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var num = prompt("Enter numbers using comma seperation: ");
+    var arr=num.split(",");
+    document.write(arr+"</br>");
+    for(i=0; i < arr.length; i++){
+    if(arr[i]%2 == 0){
+    document.write(arr[i] + "</br>");
+    }
+    }
+    document.write("<br>"+arr.sort());
+    document.write("<br>"+arr[0] + "<br>");
+    document.write(arr[arr.length-1] + "<br>");
+</script>
+</body>
+</html>

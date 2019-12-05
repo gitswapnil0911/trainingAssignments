@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body bgcolor="cyan">
+<h1>Registration Page</h1>
+<form>
+    <pre>
+        Enter First Name: <input type="text" name="fname"/>
+
+        Enter Last Name: <input type="text" name="lname"/>
+
+        Choose Username: <input type="text" name="uname"/>
+
+        Choose Password: <input type="password" name="pwd"/>
+
+        Enter Permanent Address:
+        <textarea rows="4" cols="20" name="padd">
+
+        </textarea>
+
+        Highest Qualification:
+        <select name="qual">
+            <option value="BE">B. Engg</option>
+            <option value="MCA">M.Comp App</option>
+            <option value="BSC">B.SC</option>
+            <option value="MBA">M. Buss Adm</option>
+        </select>
+
+        Skills:
+        <select name="skills" size="3" multiple>
+            <option value="RDBMS">RDBMS</option>
+            <option value="Java">Java Programming</option>
+            <option value="Java EE">Java EE Programming</option>
+            <option value="JPA">Java Persistent API</option>
+            <option value="Spring">Spring Framework</option>
+        </select>
+
+        Hobbies:
+        <input type="checkbox" name="hobbies" value="trek">Trekking
+        <input type="checkbox" name="hobbies" value="dance">Dancing
+        <input type="checkbox" name="hobbies" value="sing">Singing
+        <input type="checkbox" name="hobbies" value="swim">Swimming
+        <input type="checkbox" name="hobbies" value="cook">Cooking
+
+        Marital Status:
+        <input type="radio" name="ms" value="M">Married
+        <input type="radio" name="ms" value="S">Single
+
+        <input type="submit" value="Submit"/>
+
+        <input type="button" value="OK"/>
+
+        <input type="reset" value="Reset"/>
+    </pre>
+</form>
+
+</body>
+</html>

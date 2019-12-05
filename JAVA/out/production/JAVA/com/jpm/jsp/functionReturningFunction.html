@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var f1 = function() {
+    return function(){
+        return 100;
+        }
+     }
+
+     function accept(myFunction){
+     var num = myFunction();
+     return num;
+     }
+
+     x=f1();
+     alert(x);
+     y = accept(x);
+     alert(y);
+</script>
+
+</body>
+</html>

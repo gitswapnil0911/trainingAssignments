@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function (){
+    $("#t2").blur(function (){
+    x=$("#t1").val();
+    y=$("#t2").val();
+    z = parseInt(x) + parseInt(y);
+    $("#t3").val(z);
+    $("#t1").val("");
+    $("#t2").val("");
+    $("#t1").focus();
+    });
+    });
+    </script>
+</head>
+<body>
+<form>
+    <pre>
+        Enter 1st No. : <input type="text" id="t1">
+
+        Enter 2nd No. : <input type="text" id="t2">
+
+        Result : <input type="text" id="t3" disabled>
+    </pre>
+</form>
+</body>
+</html>

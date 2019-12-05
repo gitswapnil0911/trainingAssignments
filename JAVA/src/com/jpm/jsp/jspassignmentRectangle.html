@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    ulength = prompt("Enter Length:");
+    nlength= parseInt(ulength);
+    ubreadth = prompt("Enter Length:");
+    nbreadth= parseInt(ubreadth);
+    var details=createRectangle(nlength,nbreadth);
+    document.write("<h2> Length is: "+details.rectangle_l+"</h2>" +"<h2> Breadth is: "+details.rectangle_b +"</h2>" + "<h2> Area is: "+details.rectangle_a+"</h2>" +"<h2> Perimeter is: "+details.rectangle_p+"</h2>");
+
+    function getPerimeter(length,breadth){
+    var perimeter  = 2 * (length + breadth);
+    return perimeter;
+    }
+
+    function getArea(length,breadth){
+    var area  = length * breadth;
+    return area;
+    }
+
+    function createRectangle(length, breadth){
+    rect = {
+        rectangle_l : length,
+        rectangle_b : breadth,
+        rectangle_a : getArea(length, breadth),
+        rectangle_p : getPerimeter(length, breadth)
+    }
+    return rect;
+    }
+
+</script>
+
+</body>
+</html>

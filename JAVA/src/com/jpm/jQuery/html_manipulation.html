@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function (){
+    $("#change").click(function (){
+    x=$("#txt_id").val();
+    $("h1").html(x+"1");
+    $("h2").html(x+"2");
+    $("h3").html(x+"3");
+    });
+    });
+    </script>
+</head>
+<body>
+<h1>Heading</h1>
+<h2>Heading</h2>
+<h3>Heading</h3>
+<form name="f1">
+<input type="text" id="txt_id">
+<input type="button" id="change" value="Change">
+</form>
+</body>
+</html>

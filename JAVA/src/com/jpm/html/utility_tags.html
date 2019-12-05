@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function changeUsage(f1){
+        val = document.getElementById("metid");
+        val.value=prompt("Enter Usage:");
+        }
+    </script>
+</head>
+<body>
+<form name="form1">
+<details>
+    <summary>HTML5</summary>
+        <p>HTML 5 is a new enhanced version</p>
+        <p>It Supports new set of <mark style="background-color:cyan" >elements,</mark></p>
+</details>
+Disk Usage: <meter value="0.7" name="met" id="metid"></meter>70%<br/>
+Apllication Performace (1 to 10): <meter optimum="5" high="7" low="4" value="8" min="1" max="10"></meter><br/>
+Progress: <progress max="100" value="60"></progress>60%<br/>
+
+<input type="button" name="change" value="Change" onclick="changeUsage(form1)">
+</form>
+</body>
+</html>

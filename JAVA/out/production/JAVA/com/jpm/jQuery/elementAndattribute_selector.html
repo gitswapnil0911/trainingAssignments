@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        function hideCenterlyAlignedParagraphs(){
+        $("p[align='center']").hide();
+        }
+        function hideCenterlyAlignedHeading1(){
+        $("h1[align='center']").hide();
+        }
+    </script>
+</head>
+<body>
+<form>
+    <pre>
+        <h1 align="center">This is centerly aligned heading1</h1>
+        <h1 align="left">This is left aligned heading1</h1>
+        <p align="left">This is left aligned para</p>
+        <p align="center">This is centerly aligned para</p>
+        <h2 align="right">This is right aligned heading</h2>
+        <input type="button" value="Hide Center Aligned Paragraphs" onclick="hideCenterlyAlignedParagraphs()">
+
+        <input type="button" value="Hide Center Aligned Heading1" onclick="hideCenterlyAlignedHeading1()">
+    </pre>
+</form>
+
+</body>
+</html>

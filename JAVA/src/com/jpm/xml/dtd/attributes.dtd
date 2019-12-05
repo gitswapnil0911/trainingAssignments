@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!ELEMENT countries (country)*>
+        <!ELEMENT country (name, capital, currency)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT capital (#PCDATA)>
+        <!ELEMENT currency (#PCDATA)>
+        <!ATTLIST country code ID #REQUIRED>
+        <!ATTLIST country language CDATA "ENGLISH">
+        <!ATTLIST country pm CDATA #IMPLIED>
+        <!ATTLIST country continent (ASIA | EUROPE | AFRICA | NORTH_AMERICA) #REQUIRED>

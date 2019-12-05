@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+    function show(f1) {
+    email = f1.emailAddress.value;
+    url = f1.URL.value;
+    age = f1.age.value;
+    clr = f1.favcolor.value;
+    document.bgColor = clr;
+    dt = f1.bday.value;
+    rng = f1.r1.value;
+    e1 = document.getElementById("email");
+    u1 = document.getElementById("url");
+    a1 = document.getElementById("age");
+    d1 = document.getElementById("date");
+    r1 = document.getElementById("rng");
+    e1.innerHTML=email;
+    u1.innerHTML=url;
+    a1.innerHTML=age;
+    d1.innerHTML=dt;
+    r1.innerHTML=rng;
+    }
+    </script>
+
+</head>
+<body>
+<form name="form1">
+    <pre>
+        Enter Email : <input type="email" name="emailAddress">
+        Enter URL : <input type="url" name="URL">
+        Enter Age : <input type="number" name="age" max="100" min="1">
+        Your favorite color : <input type="color" name="favcolor" value="#ff0000">
+        Your Birthdate : <input type="date" name="bday">
+        Your intrest in movie (1 to 100) : <input type="range" name="r1" min="1" max="100">
+        <input type="button" value="OK" onclick="show(form1)">
+    </pre>
+</form>
+<h3 id="email"></h3>
+<h3 id="url"></h3>
+<h3 id="age"></h3>
+<h3 id="date"></h3>
+<h3 id="rng"></h3>
+</body>
+</html>

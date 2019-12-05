@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+        <script type="text/javascript" src="jquery-3.4.1.js"></script>
+        <script type="text/javascript">
+            function showAllParagraphs(){
+            $("p").show();
+            }
+            function hideAllParagraphs(){
+            $("p").hide();
+            }
+            function hideAllHeading1(){
+            $("h1").hide();
+            }
+        </script>
+</head>
+<body>
+<form>
+    <pre>
+                <p>Para 1</p>
+                <p>Para 2</p>
+                <p>Para 3</p>
+                <h1>Heading1</h1>
+                <h1>Heading1</h1>
+                <h1>Heading1</h1>
+                <h2>Heading2</h2>
+                <h2>Heading2</h2>
+                <h2>Heading2</h2>
+                <h2>Heading2</h2>
+                <input type="button" value="ShowAllParagraphs" onclick="showAllParagraphs()">
+                <input type="button" value="hideAllParagraphs" onclick="hideAllParagraphs()">
+                <input type="button" value="hideAllHeading1" onclick="hideAllHeading1()">
+</pre>
+</form>
+</body>
+</html>

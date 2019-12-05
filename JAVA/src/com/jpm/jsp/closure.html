@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var add = (function(){
+    var c=0;
+    return function(){
+    c++
+    return c;
+    }
+    })();
+    document.write("<h3>"+ add() +"</h3>");
+    document.write("<h3>"+ add() +"</h3>");
+    document.write("<h3>"+ add() +"</h3>");
+</script>
+</body>
+</html>

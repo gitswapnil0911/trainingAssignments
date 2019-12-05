@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE countries [
+        <!ELEMENT countries (country)+>
+        <!ELEMENT country (name, capital, currency+, description)>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT capital (#PCDATA)>
+        <!ELEMENT currency (#PCDATA)>
+        <!ELEMENT description (continent, language)>
+        <!ELEMENT continent (#PCDATA)>
+        <!ELEMENT language (#PCDATA)>
+        ]>
+<countries>
+    <country>
+        <name>India</name>
+        <capital>New Delhi</capital>
+        <currency>INR</currency>
+        <description>
+            <continent>Asia</continent>
+            <language>Hindi</language>
+        </description>
+    </country>
+    <country>
+        <name>India</name>
+        <capital>New Delhi</capital>
+        <currency>INR</currency>
+        <currency>USD</currency>
+        <description>
+            <continent>Asia</continent>
+            <language>Hindi</language>
+        </description>
+    </country>
+</countries>

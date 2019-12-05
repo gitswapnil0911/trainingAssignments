@@ -1,0 +1,17 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib uri="/WEB-INF/sysdate.tld" prefix="show" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Showing System Date</h1>
+	<show:sysDate>
+		<h1>Hello</h1>
+	</show:sysDate>
+		<h2>Thank You!</h2>
+</body>
+</html>

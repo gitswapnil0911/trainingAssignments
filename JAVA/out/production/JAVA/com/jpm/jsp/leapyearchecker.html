@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    yr = prompt("Enter year to check if it is leap:");
+    nyr= parseInt(yr);
+    if( (nyr%4==0 && nyr%100!==0) || nyr%400==0)
+    document.write(nyr + "<h2>Is a leap year</h2>");
+    else
+    document.write(nyr + "<h2>Is not a leap year</h2>");
+</script>
+</body>
+</html>

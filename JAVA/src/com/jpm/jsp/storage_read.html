@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function read(h1Obj){
+        h1_txt = localStorage.getItem("myText");
+        h1Obj.innerHTML= h1_txt;
+        }
+    </script>
+</head>
+<body>
+<h1 onclick="read(this)">Click here to get the text</h1>
+</body>
+</html>

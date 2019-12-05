@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Key event example</title>
+</head>
+<body>
+<h2>Key Event example</h2>
+<script>
+    function checkVal(e, t){
+    kc = e.keyCode;
+
+    if((kc < 48 || kc > 57) && kc!=190)
+    t.value="";
+    }
+</script>
+<form name="form1">
+    <pre>
+        <input type="text" onkeyup="checkVal(event, this)"/>
+    </pre>
+</form>
+</body>
+</html>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rest:restaurant xmlns:rest="http://www.restaurant.com"
+                 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                 xsi:schemaLocation="http://www.restaurant.com element.xsd">
+    <rest:restaurant-name>Welcome</rest:restaurant-name>
+    <rest:restaurant-cuisine>Indian</rest:restaurant-cuisine>
+    <rest:no_of_branches>3</rest:no_of_branches>
+</rest:restaurant>
+    

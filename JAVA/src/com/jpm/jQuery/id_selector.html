@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        function hideElementById(x){
+        $("#"+x).hide();
+
+        }
+    </script>
+</head>
+<body>
+<h1 id="h1">This is centerly aligned heading1</h1>
+<h1 id="h2">This is left aligned heading1</h1>
+<p id="p1">This is left aligned para</p>
+<p id="p2">This is centerly aligned para</p>
+<h2 id="h3">This is right aligned heading</h2>
+<form name="form1">
+
+
+        <input type="text" name="txt_id">
+        <input type="button" value="Hide by ID" onclick="hideElementById(document.form1.txt_id.value)">
+
+</form>
+</body>
+</html>

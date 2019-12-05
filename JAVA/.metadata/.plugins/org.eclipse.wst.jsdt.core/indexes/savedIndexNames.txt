@@ -1,0 +1,10 @@
+INDEX VERSION 1.4+D:\Swapnil\JAVA\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+4222358006.index
+2540044494.index
+242176372.index
+3750285058.index
+2632801101.index
+1018772801.index
+1047632368.index
+3248471075.index
+243818295.index

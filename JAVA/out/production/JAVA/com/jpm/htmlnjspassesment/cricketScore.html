@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+    h2 {
+        color: white;
+       }
+    h1 {
+        color: red;
+       }
+     </style>
+    <script type="text/javascript" src="jquery-3.4.1.js"></script>
+    <script type="text/javascript">
+        function checkScore(e,t) {
+            ks=e.keyCode;
+
+            if((ks<48 || ks>57))
+                t.value="";
+        }
+        $(document).ready(function () {
+        $("#submit").click(function () {
+        if ((document.form1.bname.value) == "") {
+        alert("Please enter player name");
+        }
+        innings=5;
+        average=0;
+        notout=$(":checkbox:checked").length;
+        s1 = $("#firstmatch").val();
+        s2 = $("#secondmatch").val();
+        s3 = $("#thirdmatch").val();
+        s4 = $("#fourthmatch").val();
+        s5 = $("#fifthmatch").val();
+        score1 = parseInt(s1);
+        score2 = parseInt(s2);
+        score3 = parseInt(s3);
+        score4 = parseInt(s4);
+        score5 = parseInt(s5);
+        runs = score1 + score2 + score3 + score4 + score5;
+        if(innings==notout)
+        average=runs;
+        else
+        average=runs/(innings-notout);
+        n1 = document.getElementById("display");
+        n1.innerHTML= "Average is " +average;
+         })
+        });
+</script>
+</head>
+<body bgcolor="blue">
+    <form name="form1">
+        <div align="center">
+
+        <pre>
+    <h1 align="center">Batting Average Calculator For 5 match series</h1>
+            <h2 align="center">Enter Batsmen's Name : <input type="text" name="bname" onfocusout="checkPname()"></h2>
+    <h2 align="center">Scores for Matches</h2>
+    <table border="2" cellspacing="10" cellpadding="10" align="center" bgcolor="orange">
+        <tr>
+            <th>Match No</th>
+            <th>Score</th>
+            <th>Not out</th>
+        </tr>
+        <tr>
+            <td align="center">1</td>
+            <td><input type="text" id="firstmatch" align="center" onkeyup="checkScore(event,this)"></td>
+            <td><input type="checkbox" name="nout"></td>
+        </tr>
+        <tr>
+            <td align="center">2</td>
+            <td><input type="text" id="secondmatch" align="center" onkeyup="checkScore(event,this)"></td>
+            <td><input type="checkbox" name="nout"></td>
+        </tr>
+        <tr>
+            <td align="center">3</td>
+            <td><input type="text" id="thirdmatch" align="center" onkeyup="checkScore(event,this)"></td>
+            <td><input type="checkbox" name="nout"></td>
+        </tr>
+        <tr>
+            <td align="center">4</td>
+            <td><input type="text" id="fourthmatch" align="center" onkeyup="checkScore(event,this)"></td>
+            <td><input type="checkbox" name="nout"></td>
+        </tr>
+        <tr>
+            <td align="center">5</td>
+            <td><input type="text" id="fifthmatch" align="center" onkeyup="checkScore(event,this)"></td>
+            <td><input type="checkbox" name="nout"></td>
+        </tr>
+    </table>
+
+     <input type="button" type="submit" value="Calculate Average" id="submit" align="center">
+        </pre>
+        </div>
+    </form>
+    <h1 id="display"></h1>
+</body>
+</html>
